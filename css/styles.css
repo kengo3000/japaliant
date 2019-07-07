@@ -1,0 +1,1515 @@
+body {
+   margin: 0px;
+   background-color: #FFF;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-left:
+}
+
+.wrap::after{
+  clear: both;
+  display: block;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 22px 40px;
+  float: top;
+  justify-content: space-between;
+  transition: .5s;
+  background-color: rgda(255,0,0,0);
+  z-index: 2;
+}
+
+.header-logo h1  {
+  transition: .3s;
+}
+
+.header-logo a {
+  color: #fff;
+  font-family: 'Verdana',sans-serif;
+  letter-spacing:1.26px;
+  font-weight: lighter;
+  z-index: 2;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.header-logo::after {
+  clear: both;
+  display: block;
+}
+
+.is-animation {
+  background-color: #FFF;
+}
+.is-animation a {
+  color: #000;
+}
+.is-animation .toggle span {
+  border-bottom-color: #000;
+}
+
+
+header nav {
+  padding-top: 200px;
+}
+
+header ul {
+  text-align: center;
+  list-style: none;
+  margin-top: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+
+.toggle {
+    position: fixed;
+    right: 40px;
+    top: 27px;
+    display: block;
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+.toggle span {
+    display: block;
+    position: absolute;
+    width: 70%;
+    border-bottom: solid 3px #fff;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    padding-top: 5px;
+    right: 7px;
+}
+.toggle span:nth-child(1) {
+    top: 3px;
+}
+.toggle span:nth-child(2) {
+    top: 13px;
+}
+.toggle span:nth-child(3) {
+    top: 23px;
+}
+
+.toggle.active span:nth-child(1) {
+    top: 15px;
+    left: 4px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+     border-bottom: solid 3px #000;
+}
+
+.toggle.active span:nth-child(2),
+.toggle.active span:nth-child(3) {
+    top: 15px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: solid 3px #000;
+}
+
+.global_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    z-index: 2;
+    padding-top: 60px;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    transition: all 0.8s;
+}
+.global_nav .nav_li {
+    width: 100%;
+    padding: 10px;
+    list-style-type: none;
+}
+.global_nav .nav_li a {
+    display: block;
+    color: #000;
+    font-family: 'Verdana',sans-serif;
+    font-weight: lighter;
+    letter-spacing:1.26px;
+}
+
+.global_nav.active {
+    transform: translateY(0%);
+}
+
+.global_nav_content {
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 50px;
+}
+
+.global_nav a {
+  text-decoration: none;
+  color:#000;
+}
+
+.global_nav_content {
+  padding: 0;
+}
+
+.bg-slider {
+	width: 100vw;
+	height: 100vh;
+	background-position:center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.more-button a{
+    font-family: 'Verdana',sans-serif;
+}
+
+.section_content {
+  /* padding: 0;
+  height: 2040px;              */
+}
+
+.section {
+  /* width: 1195px;
+  height: 1960px;
+  margin:  0 auto; */
+}
+
+.concept {
+  /* height: 590px;
+  margin-top: 80px;
+  margin-bottom: 60px; */
+}
+
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 500ms;
+    }
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+.taitle {
+  color: #000;
+  font-family: 'Verdana',sans-serif;
+  font-size: 24px;
+  letter-spacing:1.26px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.sbtaitle {
+  font-size: 12px;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  letter-spacing:1.26px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.txt {
+  font-size: 12px;
+  line-height: 2.5;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  letter-spacing:1.26px;
+  margin-top: 51px;
+  margin-bottom: 34px;
+}
+
+.more-button {
+  font-family: 'Verdana',sans-serif;
+  font-size: 12px;
+  letter-spacing:1.26px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.more-button {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 60px;
+  text-decoration: none;
+  color: #fff;
+  background: #000;
+  transition: .4s;
+}
+
+.more-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* footer */
+.specialites_taitle {
+  text-align: center;
+  margin: 0px;
+  font-size: 24px;
+  font-family: 'Verdana',sans-serif;
+  letter-spacing:1.26px;
+  font-weight: lighter;
+}
+
+.specialites_sbtaitle {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  letter-spacing:1.26px;
+}
+
+.specialites_sbtaitle2 {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  letter-spacing:1.26px;
+}
+.instagram {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.access {
+ background-color: #3A0013;
+ padding-top: 80px;
+ padding-bottom: 80px;
+}
+
+.access_taitle {
+  text-align: center;
+  color: #fff;
+  font-family: 'Verdana',sans-serif;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  letter-spacing:1.26px;
+  font-weight: lighter;
+}
+
+.access_content {
+  font-size: 12px;
+  color: #fff;
+  line-height: 3;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  letter-spacing:1.26px;
+}
+
+
+.icon {
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+  -ms-filter: invert(100%);
+  filter: invert(100%);
+  margin-left: 32px;
+}
+
+.access_menu ul{
+  /* margin: 0;
+  padding: 0px;
+  text-align: center; */
+}
+
+.access_menu_content li{
+  list-style: none;
+  margin: 0;
+  display: inline;
+}
+
+.access_bottom1 a{
+  text-decoration: none;
+  color:#fff;
+  opacity: 0.5;
+  font-family: 'Verdana',sans-serif;
+  font-size: 12px;
+  letter-spacing:1.26px;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+.access_bottom2 a{
+  text-decoration: none;
+  color:#fff;
+  opacity: 0.5;
+  font-family: 'Verdana',sans-serif;
+  font-size: 12px;
+  letter-spacing:1.26px;
+  font-weight: lighter;
+  margin-left: 70px;
+}
+
+.access_bottom3 a{
+  text-decoration: none;
+  color:#fff;
+  opacity: 0.5;
+  font-family: 'Verdana',sans-serif;
+  font-size: 12px;
+  letter-spacing:1.26px;
+  font-weight: lighter;
+  margin-left: 70px;
+}
+
+/* 画面1280 */
+@media screen and (min-width:1280px) {
+
+  .section_content {
+    padding: 0;              /* 余白指定 */
+    height: 2040px;              /* 高さ指定 */
+  }
+
+  .section {
+    width: 1195px;               /* 幅指定 */
+    height: 1960px;               /* 高さ指定 */
+    margin:  0 auto;
+  }
+
+  .concept {
+    height: 590px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .concept_img {
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .concept_img img{
+    overflow: hidden;
+    width: 830px;/* トリミングしたい枠の幅 */
+    height: 505px;/* トリミングしたい枠の高さ */
+    position: relative;
+    vertical-align:bottom;
+  }
+
+  .concept_content {
+    position: relative;
+    float: right;
+    width: 830px;
+    height: 505px;
+    background-color: #c5c5c5;
+    top: 85px;
+    z-index: 0;
+  }
+
+  .concept_content::after{
+    clear: both;
+    display: block;
+  }
+
+  .section1 {
+    padding-top: 85px;
+    padding-bottom: 148.4px;
+    padding-left: 550px;
+  }
+
+  .more-button {
+    font-size: 12px;
+    letter-spacing:1.26px;
+  }
+
+  .more-button {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 60px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    transition: .4s;
+  }
+  .more-button:hover {
+    background: #fff;
+    color: #000;
+  }
+
+
+
+  .menu {
+    width: 1195px;
+    height: 590px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .menu_img {
+    margin: 0px;
+    z-index: 1;
+    float: right;
+    vertical-align:bottom;
+    position: relative;
+  }
+
+  .menu_img img{
+    overflow: hidden;
+    width: 830px;
+    height: 505px;
+  }
+
+  .menu_content {
+    position: relative;
+    width: 830px;
+    height: 505px;
+    background-color: #c5c5c5;
+    z-index: 0;
+    top: 85px;
+  }
+
+  .menu_content::after{
+    clear: both;
+    display: block;
+  }
+
+  .section2 {
+    padding-top: 85px;
+    padding-bottom: 148.4px;
+    padding-left: 84px;
+  }
+
+
+
+  .infomation {
+    width: 1195px;
+    height: 590px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .infomation_img {
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .infomation_img img{
+    overflow: hidden;
+    width: 830px;/* トリミングしたい枠の幅 */
+    height: 505px;/* トリミングしたい枠の高さ */
+    vertical-align:bottom;
+  }
+
+  .infomation_content {
+    position: relative;
+    float: right;
+    width: 830px;
+    height: 505px;
+    background-color: #c5c5c5;
+    top: 85px;
+    z-index: 0;
+    margin-bottom: 80px;
+  }
+
+  .infomation_content::after{
+    clear: both;
+    display: block;
+  }
+
+  .section3 {
+    padding-top: 85px;
+    padding-left: 551px;
+  }
+
+  a[href^="tel:"]{
+    pointer-events: none;
+  }
+
+  /* footer */
+  .instagram {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .tab_instagram {
+    display: none;
+  }
+
+  .access {
+   background-color: #3A0013;
+   padding-top: 80px;
+   padding-bottom: 80px;
+  }
+
+  .access_img a{
+    display: inline-block;
+  }
+
+  .access_content {
+    margin-top: 0px;
+    margin-bottom: 180px;
+    padding-left: 292px;
+  }
+
+  .google_map {
+    float: right;
+    padding-right: 214px
+  }
+
+  .google_map1{
+    display: none;
+  }
+
+  .access_img {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+
+  .icon {
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+    filter: invert(100%);
+    margin-left: 32px;
+  }
+
+  .access_menu ul{
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .access_menu_content li{
+    list-style: none;
+    margin: 0;
+    display: inline;
+  }
+}/* 画面1280 */
+
+
+/* 960px〜1279px： */
+@media screen and (min-width:960px) and (max-width:1279px) {
+
+  .concept {
+    position: relative;
+  }
+
+  p.concept_img {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+    z-index: 0;
+  }
+
+
+  .concept_img img{
+    overflow: hidden;
+    width: 830px;/* トリミングしたい枠の幅 */
+    height: 505px;/* トリミングしたい枠の高さ */
+    vertical-align: bottom;
+  }
+
+  .concept_content {
+   width: 100%;
+   text-align: center;
+  }
+
+  .concept_content::after{
+    clear: both;
+    display: block;
+  }
+
+  .section1 {
+  width: 505px;
+  background-color: #C5C5C5;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: absolute;
+  top: 322px;
+  left: 0;
+  right: 0;
+  z-index: 1
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  p.menu_img {
+   text-align: center;
+   margin-top: 253.8px;
+   margin-bottom: 0;
+  }
+
+  .menu_img img{
+    overflow: hidden;
+    width: 830px;
+    height: 505px;
+    vertical-align: bottom;
+  }
+
+  .menu_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu_content::after{
+    clear: both;
+    display: block;
+  }
+
+  .section2 {
+    width: 505px;
+    background-color: #C5C5C5;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: absolute;
+    top: 322px;
+    left: 0;
+    right: 0;
+    z-index: 1
+  }
+
+  .infomation_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .infomation {
+    position: relative;
+  }
+
+  p.infomation_img {
+    margin-top: 253.8px;
+    text-align: center;
+    margin-bottom: 0;
+    z-index: 0;
+  }
+
+  .infomation_img img{
+    overflow: hidden;
+    width: 830px;/* トリミングしたい枠の幅 */
+    height: 505px;/* トリミングしたい枠の高さ */
+    vertical-align:bottom;
+  }
+
+    .infomation_content {
+      width: 100%;
+      text-align: center;
+    }
+
+    .infomation_content::after{
+      clear: both;
+      display: block;
+    }
+
+    .section3 {
+      width: 505px;
+      background-color: #C5C5C5;
+      margin: 0 auto;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      position: absolute;
+      top: 322px;
+      left: 0;
+      right: 0;
+      z-index: 1
+    }
+
+    a[href^="tel:"]{
+      pointer-events: none;
+    }
+
+  /* footer */
+.spc {
+  margin-top: 333.8px;
+  margin-bottom: 0;
+}
+
+.instagram {
+  display: none;
+}
+  .tab_instagram {
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .access {
+   background-color: #3A0013;
+   padding-top: 80px;
+   padding-bottom: 80px;
+  }
+
+  .access_img {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .access_img a{
+    display: inline-block;
+  }
+
+  .google_map {
+    display: none;
+  }
+  .google_img {
+    width: 100%;
+    height :230px;
+    margin: 0;
+  }
+
+  .google_map1 {
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 0;
+  }
+
+
+  .access_content {
+    margin-bottom: 90px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .icon {
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+    filter: invert(100%);
+    margin-left: 32px;
+  }
+
+  .access_menu ul{
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .access_menu_content li{
+    list-style: none;
+    margin: 0;
+    display: inline;
+  }
+
+}/* 960px〜1279px：小型PC */
+
+/* 600px〜959px：タブレット */
+@media screen and (min-width:600px) and (max-width:959px) {
+
+    .section_content {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .concept {
+      position: relative;
+    }
+
+    p.concept_img {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 0;
+      z-index: 0;
+    }
+
+
+    .concept_img img{
+      overflow: hidden;
+      width: 100%;/* トリミングしたい枠の幅 */
+      height: 380px;/* トリミングしたい枠の高さ */
+      vertical-align: bottom;
+    }
+
+    .concept_content {
+     width: 100%;
+     text-align: center;
+    }
+
+    .concept_content::after{
+      clear: both;
+      display: block;
+    }
+
+    .section1 {
+    width: 62%;
+    background-color: #C5C5C5;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1
+    }
+
+    .menu {
+      position: relative;
+    }
+
+    p.menu_img {
+     text-align: center;
+     margin-top: 253.8px;
+     margin-bottom: 0;
+    }
+
+    .menu_img img{
+      overflow: hidden;
+      width: 100%;
+      height: 380px;
+      vertical-align: bottom;
+    }
+
+    .menu_content {
+      width: 100%;
+      text-align: center;
+    }
+
+    .menu_content::after{
+      clear: both;
+      display: block;
+    }
+
+    .section2 {
+      width: 62%;
+      background-color: #C5C5C5;
+      margin: 0 auto;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      z-index: 1
+    }
+
+    .infomation_content {
+      width: 100%;
+      text-align: center;
+    }
+
+    .infomation {
+      position: relative;
+    }
+
+    p.infomation_img {
+      margin-top: 253.8px;
+      text-align: center;
+      margin-bottom: 0;
+      z-index: 0;
+    }
+
+    .infomation_img img{
+      overflow: hidden;
+      width: 100%;/* トリミングしたい枠の幅 */
+      height: 380px;/* トリミングしたい枠の高さ */
+      vertical-align:bottom;
+    }
+
+      .infomation_content {
+        width: 100%;
+        text-align: center;
+      }
+
+      .infomation_content::after{
+        clear: both;
+        display: block;
+      }
+
+      .section3 {
+        width: 62%;
+        background-color: #C5C5C5;
+        margin: 0 auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: 1
+      }
+
+      a[href^="tel:"]{
+        pointer-events: none;
+      }
+
+    /* footer */
+  .spc {
+    margin-top: 333.8px;
+    margin-bottom: 0;
+  }
+
+  .instagram {
+    display: none;
+  }
+    .tab_instagram {
+      margin-bottom: 80px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .access {
+     background-color: #3A0013;
+     padding-top: 80px;
+     padding-bottom: 80px;
+    }
+
+    .access_img {
+      list-style: none;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    .access_img a{
+      display: inline-block;
+    }
+
+    .google_map {
+      display: none;
+    }
+    .google_img {
+      width: 100%;
+      height :230px;
+      margin: 0;
+    }
+
+    .google_map1 {
+      text-align: center;
+      margin-bottom: 90px;
+      margin-top: 0;
+    }
+
+
+    .access_content {
+      margin-bottom: 90px;
+      margin-top: 0px;
+      text-align: center;
+    }
+
+    .icon {
+      -webkit-filter: invert(100%);
+      -moz-filter: invert(100%);
+      -o-filter: invert(100%);
+      -ms-filter: invert(100%);
+      filter: invert(100%);
+      margin-left: 32px;
+    }
+
+    .access_menu ul{
+      margin: 0;
+      padding: 0px;
+      text-align: center;
+    }
+
+    .access_menu_content li{
+      list-style: none;
+      margin: 0;
+      display: inline;
+    }
+
+}/* 600px〜959px：タブレット */
+
+/* 480px〜599px：SP横
+------------------------------ */
+@media screen and (min-width:480px) and (max-width:599px) {
+
+        header {
+          padding: 11px 20px;
+        }
+
+        .toggle {
+          top: 15px;
+          right: 20px;
+        }
+
+      .toggle span {
+        border-bottom: solid 2px #fff;
+      }
+
+        .header-logo a {
+          font-size: 24px
+        }
+
+      .section_content {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .concept {
+        position: relative;
+      }
+
+      p.concept_img {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 0;
+        z-index: 0;
+      }
+
+
+      .concept_img img{
+        overflow: hidden;
+        width: 100%;/* トリミングしたい枠の幅 */
+        height: 62%;/* トリミングしたい枠の高さ */
+        vertical-align: bottom;
+      }
+
+      .concept_content {
+       width: 100%;
+       text-align: center;
+      }
+
+      .concept_content::after{
+        clear: both;
+        display: block;
+      }
+
+      .section1 {
+      width: 62%;
+      background-color: #C5C5C5;
+      margin: 0 auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      z-index: 1
+      }
+
+      .txt {
+        margin-top: 24px;
+        margin-bottom: 15px;
+      }
+
+      .menu {
+        position: relative;
+      }
+
+      p.menu_img {
+       text-align: center;
+       margin-top: 253.8px;
+       margin-bottom: 0;
+      }
+
+      .menu_img img{
+        overflow: hidden;
+        width: 100%;
+        height: 62%;
+        vertical-align: bottom;
+      }
+
+      .menu_content {
+        width: 100%;
+        text-align: center;
+      }
+
+      .menu_content::after{
+        clear: both;
+        display: block;
+      }
+
+      .section2 {
+        width: 62%;
+        background-color: #C5C5C5;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: 1
+      }
+
+      .infomation_content {
+        width: 100%;
+        text-align: center;
+      }
+
+      .infomation {
+        position: relative;
+      }
+
+      p.infomation_img {
+        margin-top: 253.8px;
+        text-align: center;
+        margin-bottom: 0;
+        z-index: 0;
+      }
+
+      .infomation_img img{
+        overflow: hidden;
+        width: 100%;/* トリミングしたい枠の幅 */
+        height: 62%;/* トリミングしたい枠の高さ */
+        vertical-align:bottom;
+      }
+
+        .infomation_content {
+          width: 100%;
+          text-align: center;
+        }
+
+        .infomation_content::after{
+          clear: both;
+          display: block;
+        }
+
+        .section3 {
+          width: 62%;
+          background-color: #C5C5C5;
+          margin: 0 auto;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          z-index: 1
+        }
+
+      /* footer */
+    .spc {
+      margin-top: 333.8px;
+      margin-bottom: 0;
+    }
+
+    .instagram {
+      display: none;
+    }
+      .tab_instagram {
+        margin-bottom: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .access {
+       background-color: #3A0013;
+       padding-top: 80px;
+       padding-bottom: 80px;
+      }
+
+      .access_img {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+
+      .access_img a{
+        display: inline-block;
+      }
+
+      .google_map {
+        display: none;
+      }
+      .google_img {
+        width: 100%;
+        height :230px;
+        margin: 0;
+      }
+
+      .google_map1 {
+        text-align: center;
+        margin-bottom: 90px;
+        margin-top: 0;
+      }
+
+
+      .access_content {
+        margin-bottom: 90px;
+        margin-top: 0px;
+        text-align: center;
+      }
+
+      .icon {
+        -webkit-filter: invert(100%);
+        -moz-filter: invert(100%);
+        -o-filter: invert(100%);
+        -ms-filter: invert(100%);
+        filter: invert(100%);
+        margin-left: 32px;
+      }
+
+      .access_menu ul{
+        margin: 0;
+        padding: 0px;
+        text-align: center;
+      }
+
+      .access_menu_content li{
+        list-style: none;
+        margin: 0;
+        display: inline;
+      }
+
+      .access_bottom2 a {
+        margin-left: 20px;
+      }
+
+      .access_bottom3 a {
+        margin-left: 20px;
+      }
+
+}
+
+/* 〜479px：スマートフォン縦
+------------------------------ */
+@media screen and (max-width:479px) {
+
+        header {
+          padding: 11px 20px;
+        }
+
+        .toggle {
+          top: 15px;
+          right: 20px;
+        }
+
+      .toggle span {
+        border-bottom: solid 2px #fff;
+      }
+
+        .header-logo a {
+          font-size: 24px
+        }
+
+        .section_content {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+
+        .concept {
+          position: relative;
+        }
+
+        p.concept_img {
+          text-align: center;
+          margin-top: 60px;
+          margin-bottom: 0;
+          z-index: 0;
+        }
+
+
+        .concept_img img{
+          overflow: hidden;
+          width: 100%;/* トリミングしたい枠の幅 */
+          height: 62%;/* トリミングしたい枠の高さ */
+          vertical-align: bottom;
+        }
+
+        .concept_content {
+         width: 100%;
+         text-align: center;
+        }
+
+        .concept_content::after{
+          clear: both;
+          display: block;
+        }
+
+        .section1 {
+        width: 75%;
+        background-color: #C5C5C5;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: 1
+        }
+
+        .txt {
+          margin-top: 24px;
+          margin-bottom: 15px;
+        }
+
+        .menu {
+          position: relative;
+        }
+
+        p.menu_img {
+         text-align: center;
+         margin-top: 253.8px;
+         margin-bottom: 0;
+        }
+
+        .menu_img img{
+          overflow: hidden;
+          width: 100%;
+          height: 62%;
+          vertical-align: bottom;
+        }
+
+        .menu_content {
+          width: 100%;
+          text-align: center;
+        }
+
+        .menu_content::after{
+          clear: both;
+          display: block;
+        }
+
+        .section2 {
+          width: 75%;
+          background-color: #C5C5C5;
+          margin: 0 auto;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          z-index: 1
+        }
+
+        .infomation_content {
+          width: 100%;
+          text-align: center;
+        }
+
+        .infomation {
+          position: relative;
+        }
+
+        p.infomation_img {
+          margin-top: 253.8px;
+          text-align: center;
+          margin-bottom: 0;
+          z-index: 0;
+        }
+
+        .infomation_img img{
+          overflow: hidden;
+          width: 100%;/* トリミングしたい枠の幅 */
+          height: 62%;/* トリミングしたい枠の高さ */
+          vertical-align:bottom;
+        }
+
+          .infomation_content {
+            width: 100%;
+            text-align: center;
+          }
+
+          .infomation_content::after{
+            clear: both;
+            display: block;
+          }
+
+          .section3 {
+            width: 75%;
+            background-color: #C5C5C5;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            z-index: 1
+          }
+
+        /* footer */
+      .spc {
+        margin-top: 333.8px;
+        margin-bottom: 0;
+      }
+
+      .instagram {
+        display: none;
+      }
+        .tab_instagram {
+          margin-bottom: 80px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+
+        .access {
+         background-color: #3A0013;
+         padding-top: 80px;
+         padding-bottom: 80px;
+        }
+
+        .access_img {
+          list-style: none;
+          text-align: center;
+          margin-bottom: 70px;
+        }
+
+        .access_img a{
+          display: inline-block;
+        }
+
+        .google_map {
+          display: none;
+        }
+        .google_img {
+          width: 100%;
+          height :230px;
+          margin: 0;
+        }
+
+        .google_map1 {
+          text-align: center;
+          margin-bottom: 90px;
+          margin-top: 0;
+        }
+
+
+        .access_content {
+          margin-bottom: 90px;
+          margin-top: 0px;
+          text-align: center;
+        }
+
+        .icon {
+          -webkit-filter: invert(100%);
+          -moz-filter: invert(100%);
+          -o-filter: invert(100%);
+          -ms-filter: invert(100%);
+          filter: invert(100%);
+          margin-left: 32px;
+        }
+
+        .access_menu ul {
+          margin: 0;
+          padding: 0px;
+          text-align: center;
+        }
+
+        .access_menu_content li {
+          list-style: none;
+          margin: 0;
+          display: inline;
+        }
+
+        .access_bottom2 a {
+          margin-left: 20px;
+        }
+
+        .access_bottom3 a{
+          margin-left: 20px;
+        }
+}
